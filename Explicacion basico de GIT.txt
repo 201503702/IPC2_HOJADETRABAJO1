@@ -1,0 +1,14 @@
+¿Que entiende como "commit"?
+Commit es la confirmacion de los cambios, que genera un versionamiento del archivo
+que hemos modificado.
+
+¿Que entiende como "merge"?
+Merge verificar las copias en los diferentes branch que existenten en nuestro repositorio
+y realiza una union de estos cambios en uno solo, dejando para cada branch un versionamiento..
+
+¿Cual es la diferencia entre "Pull" y "Push"?
+Push es insertar los cambios en el repositorio remoto
+y Pull es obtener el repositorio remoto y actualizarlo de manera local
+
+¿Como utilizar ramas("branches") en la aplicacion?
+se utilizan al trabajar diferentes copias de un mismo archivo
