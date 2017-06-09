@@ -79,5 +79,23 @@ namespace IPC2_HOJADETRABAJO1
                 lblResultado3.Visible = true;
             }
         }
+
+        private void btnReglaDe3_Click(object sender, EventArgs e)
+        {
+            if (txtA.Text.Trim().Length > 0 && txtLadoX.Text.Trim().Length > 0 &&
+                txtB.Text.Trim().Length > 0 && txtLadoY.Text.Trim().Length > 0)
+            {
+
+                double a = int.Parse(txtA.Text.Trim());
+                double x = int.Parse(txtLadoX.Text.Trim());
+                double b = int.Parse(txtB.Text.Trim());
+                double y = 0.0;
+
+                y = (x * b) / a;
+
+                txtResultado.Text = y.ToString();
+
+            }
+        }
     }
 }
