@@ -58,6 +58,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtX = new System.Windows.Forms.TextBox();
             this.txtA = new System.Windows.Forms.TextBox();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -183,6 +185,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.txtCarnet);
             this.groupBox3.Controls.Add(this.lblResultado3);
             this.groupBox3.Controls.Add(this.btnVoltear);
             this.groupBox3.Controls.Add(this.label5);
@@ -354,6 +358,22 @@
             this.txtA.Size = new System.Drawing.Size(43, 20);
             this.txtA.TabIndex = 0;
             // 
+            // txtCarnet
+            // 
+            this.txtCarnet.Location = new System.Drawing.Point(67, 59);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(118, 20);
+            this.txtCarnet.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 62);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Carnet";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,6 +429,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtX;
         private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtCarnet;
     }
 }
 

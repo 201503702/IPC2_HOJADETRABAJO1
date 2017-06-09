@@ -67,7 +67,7 @@ namespace IPC2_HOJADETRABAJO1
         {
             if (txtNombre.Text.Trim().Length > 0)
             {
-                char[] nombre = txtNombre.Text.Trim().ToCharArray();
+                char[] nombre = (txtNombre.Text+txtCarnet.Text).Trim().ToCharArray();
                 String resultado = "";
 
                 for (int letra = txtNombre.Text.Length - 1; letra >= 0; letra--)
