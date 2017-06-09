@@ -35,7 +35,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtLadoX = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblResultado2 = new System.Windows.Forms.Label();
+            this.btnVocales = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtVocales = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -106,16 +112,68 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Lado X:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lblResultado2);
+            this.groupBox2.Controls.Add(this.btnVocales);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.txtVocales);
+            this.groupBox2.Location = new System.Drawing.Point(228, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(190, 162);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Contiene Vocales";
+            // 
+            // lblResultado2
+            // 
+            this.lblResultado2.AutoSize = true;
+            this.lblResultado2.Location = new System.Drawing.Point(51, 133);
+            this.lblResultado2.Name = "lblResultado2";
+            this.lblResultado2.Size = new System.Drawing.Size(71, 13);
+            this.lblResultado2.TabIndex = 3;
+            this.lblResultado2.Text = "lblResultado2";
+            this.lblResultado2.Visible = false;
+            // 
+            // btnVocales
+            // 
+            this.btnVocales.Location = new System.Drawing.Point(34, 94);
+            this.btnVocales.Name = "btnVocales";
+            this.btnVocales.Size = new System.Drawing.Size(111, 23);
+            this.btnVocales.TabIndex = 2;
+            this.btnVocales.Text = "Evaluar Palabra";
+            this.btnVocales.UseVisualStyleBackColor = true;
+            this.btnVocales.Click += new System.EventHandler(this.btnVocales_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(40, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Palabra a evaluar:";
+            // 
+            // txtVocales
+            // 
+            this.txtVocales.Location = new System.Drawing.Point(20, 59);
+            this.txtVocales.Name = "txtVocales";
+            this.txtVocales.Size = new System.Drawing.Size(139, 20);
+            this.txtVocales.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(236, 194);
+            this.ClientSize = new System.Drawing.Size(437, 192);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -129,6 +187,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtLadoX;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label lblResultado2;
+        private System.Windows.Forms.Button btnVocales;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtVocales;
     }
 }
 

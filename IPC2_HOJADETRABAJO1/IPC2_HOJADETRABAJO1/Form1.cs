@@ -30,5 +30,37 @@ namespace IPC2_HOJADETRABAJO1
                 lblResultado.Visible = true;
             }
         }
+
+        private void btnVocales_Click(object sender, EventArgs e)
+        {
+            if (txtVocales.Text.Trim().Length > 0)
+            {
+                String[] vocales = new String[] { "a", "e", "i", "o", "u" };
+                int contador = 0;
+                String cadena = txtVocales.Text.
+                                           Trim().
+                                           ToLower().
+                                           Replace("á", "a").
+                                           Replace("é", "e").
+                                           Replace("í", "i").
+                                           Replace("ó", "o").
+                                           Replace("ú", "u");
+                for (int c = 0; c < vocales.Length; c++)
+                {
+                    contador += (cadena.IndexOf(vocales[c]) != -1) ? 1 : 0;
+                }
+
+                if (contador > 4)
+                {
+                    lblResultado2.Text = "La palabra es valida";
+                }
+                else
+                {
+                    lblResultado2.Text = "La palabra es invalida";
+                }
+
+                lblResultado2.Visible = true;
+            }
+        }
     }
 }
