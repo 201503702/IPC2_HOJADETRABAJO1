@@ -40,8 +40,14 @@
             this.btnVocales = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtVocales = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblResultado3 = new System.Windows.Forms.Label();
+            this.btnVoltear = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -161,11 +167,61 @@
             this.txtVocales.Size = new System.Drawing.Size(139, 20);
             this.txtVocales.TabIndex = 0;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lblResultado3);
+            this.groupBox3.Controls.Add(this.btnVoltear);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.txtNombre);
+            this.groupBox3.Location = new System.Drawing.Point(12, 180);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 184);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Voltear Nombre";
+            // 
+            // lblResultado3
+            // 
+            this.lblResultado3.AutoSize = true;
+            this.lblResultado3.Location = new System.Drawing.Point(56, 158);
+            this.lblResultado3.Name = "lblResultado3";
+            this.lblResultado3.Size = new System.Drawing.Size(71, 13);
+            this.lblResultado3.TabIndex = 5;
+            this.lblResultado3.Text = "lblResultado3";
+            this.lblResultado3.Visible = false;
+            // 
+            // btnVoltear
+            // 
+            this.btnVoltear.Location = new System.Drawing.Point(56, 102);
+            this.btnVoltear.Name = "btnVoltear";
+            this.btnVoltear.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltear.TabIndex = 4;
+            this.btnVoltear.Text = "Voltear";
+            this.btnVoltear.UseVisualStyleBackColor = true;
+            this.btnVoltear.Click += new System.EventHandler(this.btnVoltear_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Nombre:";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(67, 32);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(118, 20);
+            this.txtNombre.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 192);
+            this.ClientSize = new System.Drawing.Size(437, 372);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -174,6 +230,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -192,6 +250,11 @@
         private System.Windows.Forms.Button btnVocales;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtVocales;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lblResultado3;
+        private System.Windows.Forms.Button btnVoltear;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }
 

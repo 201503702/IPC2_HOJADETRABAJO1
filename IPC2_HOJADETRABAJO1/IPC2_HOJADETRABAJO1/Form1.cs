@@ -62,5 +62,22 @@ namespace IPC2_HOJADETRABAJO1
                 lblResultado2.Visible = true;
             }
         }
+
+        private void btnVoltear_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Trim().Length > 0)
+            {
+                char[] nombre = txtNombre.Text.Trim().ToCharArray();
+                String resultado = "";
+
+                for (int letra = txtNombre.Text.Length - 1; letra >= 0; letra--)
+                {
+                    resultado += nombre[letra];
+                }
+
+                lblResultado3.Text = "El resultado es: " + resultado;
+                lblResultado3.Visible = true;
+            }
+        }
     }
 }
